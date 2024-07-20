@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        strong {
+            background-color: yellow;
+        }
+        li {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Api 使用文档</h1>
+    <h1>请求</h1>
+    <ul>
+        <li>
+            地址: 
+            <strong>/search-api</strong>
+        </li>
+        <li>
+            方法: 
+            <strong>GET</strong>
+        </li>
+        <li>
+            查询字符串: 
+            <ul>
+                <li>
+                    q: 
+                    <strong>请求的数据</strong>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h1>响应</h1>
+    <ul>
+        <li>
+            格式: 
+            <strong>JSON</strong>
+        </li>
+        <li>
+            字段: 
+            <ul>
+                <li>
+                    amount: 
+                    <strong>结果数量</strong>
+                    INT
+                </li>
+                <li>
+                    results: 
+                    <strong>结果数据</strong>
+                    LIST
+                    <ul>
+                        <li>
+                            FullLink: 
+                            <strong>地址链接</strong>
+                        </li>
+                        <li>
+                            LinkHost: 
+                            <strong>地址域名</strong>
+                        </li>
+                        <li>
+                            Title: 
+                            <strong>标题</strong>
+                        </li>
+                        <li>
+                            describes: 
+                            <strong>地址介绍</strong>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
